@@ -4,11 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Loguin</title>
+    <title>Tela de Cadastro</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="javascript.js"></script>
 </head>
+
 <body>
-    <main>Tela de loguin teste</main>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error a corporis minus. Mollitia aliquid saepe consectetur blanditiis facere eligendi corrupti, dignissimos tempore rerum ex doloribus corporis et explicabo soluta ut?</p>
+    <main id="Principal">
+        <div id="menu_Principal">
+            <div id="Nmenu">Menu</div>
+            <button class="Cmenu" id="cadastro">Cadastro</button>
+            <button class="Cmenu" id="teste1">teste1</button>
+            <button class="Cmenu" id="teste2">teste2</button>
+            <button class="Cmenu" id="teste3">teste3</button> 
+        </div>
+        
+        <div id="conteudo_Principal" class="pconteudo">
+            <div id="TituloeData"><!--CxTitulo-->
+                <div id="divTitulo">
+                    <p class="NomeAO" id="Ntitulo">Título</p>
+                    <input type="text" id="TextTitulo" placeholder="Título">
+                </div>
+
+                <div id="divData">
+                    <p class="NomeAO" id="Ndata">Data</p>
+                    <input type="date" id="data">
+                </div>
+            </div>
+
+            <div id="CampoPrincipal_AO">
+                <div id="CamproPrincipal_Aluno">
+
+                    <div class="_SuperiorAO" id="_SuperiorAluno">
+                        <div class="AOEmail" id="AlunoeEmail">
+                            <p class="NomeAO">Aluno1</p>
+                            <input class="designerAO" id="Aluno1" type="text" placeholder="Nome">
+                            <input class="designerEmail" id="EmailAluno" type="email" placeholder="Email">
+                        </div>
+                    </div>
+                
+                    <div class="_InferiorAO" id ="_InferiorAluno">
+                        <div id="spaceAluno"></div>
+                    </div>
+                    <div id="BotaoAluno">
+                        <button class="BotaoAO" id="BotaoCriarAluno" onclick="CriarMaisAlunos()">Novo Aluno</button>
+                    </div>
+                </div>
+                <div id="CamproPrincipal_Orientador">
+                    <div class="_SuperiorAO" id="_SuperiorOrientador">
+                        <div class="AOEmail" id="OrientadoreEmail">
+                            <p class="NomeAO">Orientador1</p>
+                            <input class="designerAO" id="Orientador1" type="text" placeholder="Nome">
+                            <input class="designerEmail" id="EmailOrientador" type="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="_InferiorAO" id ="_InferiorOrientador"></div>
+                    <div id="BotaoOrientador">
+                        <button class="BotaoAO" id="BotaoCriarOrientador" onclick="CriarMaisOrientador()">Novo Orientador</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="CampoPrincipal_ResumoeAbstract">
+                <div id="CampoPrincipal_Resumo">
+                    <div id="NResumo_CResumo">
+                        <p class="NResumo_NAbstract" id="NResumo" >Resumo</p>
+                        <textarea class="CResumo_CAbstract" id="CResumo" placeholder="Digite o Resumo"></textarea>
+                    </div>
+                </div>
+                <div id="CampoPrincipal_Abstract">
+                    <div id="NAbstract_CAbstract">
+                        <p class="NResumo_NAbstract" id="NAbstract" >Abstract</p>
+                        <textarea class="CResumo_CAbstract" id="CAbstract" placeholder="Digite o Abstract"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div id="CampoPrincipal_palavraschav">
+                <p class="TxtPalavrasChav">Palavras-chave</p>
+                <div class="palavraschav" id="div1">
+                    <input type="text" name="ftext" id="ftext" style="order:3;" onkeydown="Add()">
+                </div>
+            </div>
+            
+        </div>
+    </main>
 </body>
 </html>

@@ -1,7 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+:root{/*Variaveis cores*/
+    --Azul_Principal: #004899;
+    --Azul_BoxShadow: #0047999d;
+    --Cinza_TextShadow: #808080da;
+}
+
 main{
-    padding: 5vh;
-    margin: 5vh;
-    width: 200px;
-    height: 200px;
-    background-color: chartreuse;
+    height: 100vh;
+    display: flex;
+    vertical-align: top;
+}
+#menu_Principal{
+    background-color: rgb(0, 72, 153);
+    width: 15%;
+    padding-top: 5px;
+}
+    #Nmenu{
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 28px;
+        margin-left: 5px;
+        margin-bottom: 20px;
+        text-shadow: var(--Cinza_TextShadow) 2px 1px 4px;
+    }
+    .Cmenu{
+        width: 100%;
+        height: 7vh;
+        padding: 5px;
+        text-align: left;
+        border: none;
+        color: #ffffff;
+        background-color: var(--Azul_Principal);
+        font-size: 14px;
+    }
+    .Cmenu:hover{
+        background-color: #00ffff;
+    }
+    .Cmenu:active{
+        background-color: #00dbdb;
+    }
+#conteudo_Principal{
+    width: 85%;
+    padding-left: 3vh;
+    padding-top: 1vh;
+
+}
+    #TituloeData{
+        display: flex;
+        vertical-align: top;
+    }
+    #TextTitulo{
+        width: 365px;
+        height: 4vh;
+        margin-right: 1vh;
+        padding-left: 3px;
+        outline: none;
+        border: 1px solid var(--Azul_Principal);
+        border-radius: 4px;
+        box-shadow: 2px 2px 3px var(--Cinza_TextShadow);
+        font-size: 14px;
+    }
+    #data{
+        width: 128px;
+        height: 4vh;
+        border: 1px solid var(--Azul_Principal);
+        border-radius: 4px;
+        box-shadow: 2px 2px 3px var(--Azul_BoxShadow);
+        outline: none;
+    }
+
+#CampoPrincipal_AO{
+    display: flex;
+    vertical-align: top;
+}
+#CamproPrincipal_Aluno{
+    padding-right: 2vh;
+}
+._SuperiorAO{
+    display: flex;
+    vertical-align: top;
+}
+    .AOEmail{
+        display: flex;
+        flex-direction: column;
+    }
+        .NomeAO{
+            margin-top: 2vh;
+            font-weight: bold;
+            color: var(--Azul_Principal);
+            margin-left: 1vh;
+        }
+        .designerAO{ 
+            width: 242px;
+            height: 4vh;
+            margin-bottom: 3px;   
+            padding-left: 3px;
+            border: 1px solid var(--Azul_Principal);
+            border-radius: 4px;
+            box-shadow: 2px 2px 3px var(--Azul_BoxShadow);
+            font-size: 14px;
+            outline: none;
+        }
+        .designerEmail{
+            width: 242px;
+            height: 4vh;
+            margin-bottom: 4px; 
+            padding-left: 3px;
+            border: 1px solid var(--Azul_Principal);
+            border-radius: 4px;
+            box-shadow: 2px 2px 3px var(--Azul_BoxShadow);
+            font-size: 14px;
+            outline: none;
+        }
+._InferiorAO{
+    display: flex;
+    flex-direction: column;
+}
+
+.BotaoAO{
+    width: 115px;
+    height: 4vh;
+    align-items: center;
+    color: white;
+    background-color: rgb(65, 126, 192);
+    border: 1px solid var(--Azul_Principal);
+    border-radius: 4px;
+}
+    .BotaoAO:active{
+        border: none;
+    }
+    .BotaoAO:hover{
+        background-color: rgb(79, 133, 190);
+    }
+
+#CampoPrincipal_ResumoeAbstract{
+    display: flex;
+    flex-direction: top;
+}
+    #CampoPrincipal_Resumo{
+        margin-right: 2vh;
+    }
+    .NResumo_NAbstract{
+        margin-top: 2vh;
+        margin-left: 1vh;
+        font-weight: bold;
+        color: rgb(0, 72, 153);
+    }
+    .CResumo_CAbstract{
+        width: 242px;
+        height: 20vh;
+        padding-top: 3px;
+        padding-left: 3px;
+        border: 1px solid rgb(0, 72, 153);
+        border-radius: 4px;
+        box-shadow: 2px 2px 3px var(--Azul_BoxShadow);
+        outline: none;
+        resize: none;
+        overflow:hidden;
+        text-align: justify;
+    }
+    .CResumo_CAbstract:hover{
+        overflow-y: scroll;
+    }
+    @font-face {
+    font-family: 'Bebas';
+    src: url("BebasNeue-Regular.ttf") format('truetype');
+}
+.Menu{
+    font-family: "Bebas";
+    color: white;
+    font-size: 5vh;
+    text-align: center;
+}
+
+
+
+.palavraschav{
+    min-height: 6.5vh;
+    height: max-content;
+    width: 54vh;
+    border-radius: 4px;
+    border: 1px solid var(--Azul_Principal);
+    box-shadow: 2px 2px 3px var(--Azul_BoxShadow);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+    #ftext{
+        border: none;
+        outline: none;
+        color: black;
+        font-family:'Roboto', sans-serif;
+        min-width: 1vh;
+        width: 15vh;
+    }
+    .btnpAO{
+        background-color: #3660B4;
+        color: white;
+        height: 2vh;
+        width: 2vh;
+        border-radius: 2vh;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px ;
+        font-size: 12px;
+    }
+.btnP{
+    background-color: #3660B4;
+    color: white;
+    height: 2vh;
+    width: 2vh;
+    border-radius: 2vh;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px ;
+    font-size: 12px;
+}
+.campos{
+    margin: 1vh;
+    margin-top: 1vh;
+    margin-left: 3px;
+    height: 2.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:fit-content;
+    border-radius: 15px;
+    background-color: var(--Azul_Principal);
+    padding: 5px;
+    padding-left: 8px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    
+}
+.campos:hover{
+    background-color: var(--Azul_Principal);
+}
+.btnP:hover{
+    background-color: #597BD3;
 }

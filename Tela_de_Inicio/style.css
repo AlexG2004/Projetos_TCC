@@ -17,6 +17,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: brown;
 }
 
     .Cursos_layout{

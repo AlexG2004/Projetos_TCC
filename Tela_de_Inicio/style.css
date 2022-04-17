@@ -6,12 +6,36 @@
 
 main{
     height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    background-color: aqua;
 }
-#CusosTecnicos_Container_Principal{
+#Container_Superior{
+    background-color: chartreuse;
+    height: 35vh;
+}
+    .BarraMenu_Container{
+        background-color: #004899;
+        height: 62px;
+    }
+        .Conteudo_BarraMenu{
+            background-color: darkorange;
+            margin-left: 20vh;
+            margin-right: 20vh;
+            padding: 1vh;
+            height: calc(100% - (1vh * 2));
+            display: flex;
+            align-items: row;
+        }
+        .Imagem_Conteudo{
+            background-color: crimson;
+            width: 10%;
+            height: 100%;
+        }
+        .Botao_Conteudo{
+            background-color: rgb(150, 3, 32);
+            width: 90%;
+            height: 100%;
+        }
+#Container_CusosTecnicos{
     width: 100%;
     height: 35vh;
     display: flex;
